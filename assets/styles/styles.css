@@ -1,0 +1,351 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    background-color: #002D62;
+    width: 100vw;
+    height: 10vh;
+    
+}
+
+#inputHeader{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputHolder{
+    width: 40%;
+    height: 6vh;
+    border-radius: 5em;
+    padding-left: 1em;
+    border : 0.2em white solid;
+    margin-top: 2vh;
+    font-size: 3vh;
+}
+
+#searchButton{
+    z-index: 1;
+    margin-left: -3.5em;
+    width: 1.8em;
+    height: 1.8em;
+    margin-top: 2vh;
+    border: none;
+    color: white;
+}
+
+#locator{
+    margin-left: 7.5vh;
+    width:  10vw;
+    height: 4vh;
+    border: none;
+    margin-top: 4vh;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#locator img {
+    width: 1.8em;
+    height: 1.8em;
+}
+
+#showArea{
+    display: flex;
+}
+
+#currentCity{
+    width: 70vw;
+    background-color: #6CB4EE;
+    height: 90vh;
+    border: 0.5em solid white;
+    border-radius: 2em;
+}
+
+#commonCities{
+    height: 90vh;
+    padding-left: 2em;
+    padding-top: 1em;
+    padding-right: 2em;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0066b2;
+    border: 0.5em white solid;
+    border-radius: 2em;
+}
+
+#headerBox img{
+    height: 2.5vw;
+    width: 2.5vw;
+}
+
+#headerBox h1{
+    font-size: 1.7em;
+}
+
+#headerBox h2{
+    font-size: 1.5em;
+}
+
+#outerBox{
+    background-color: white;
+    width: 30vw;
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3em;
+    /* padding-top: 2em; */
+    align-items: center;
+    border: 0.2em black solid;
+    border-radius: 4em;
+    /* margin-top: 5vh; */
+}
+
+#innerBox{
+    margin-right: 2em;
+    font-size: 1.2em;
+}
+
+
+#currentCity{
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+#currentWeatherInnerBox{
+    height : 32vh;
+    width : 55vw;
+    background-color: white;
+    display: flex;
+    margin-top: 2em;
+    border: 0.2em solid black;
+    border-radius: 4em;
+}
+
+#leftInnerBox{
+    width : 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#leftInnerBox img{
+    height: 20vh;
+    width: 20vh;
+}
+
+
+#rightInnerBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#forecastOuterBox{
+    width: 100%;
+    height: 50%;
+    padding-top: 2em;
+}
+
+#outerForecastBox{
+    width : 100%;
+    display:flex;
+    justify-content: space-around;
+    margin-left : -1em;
+    margin-top : 1em;
+    height : 80%;
+}
+
+#forecastInnerBox{
+    width : 18%;
+    border : 0.2em black solid;
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1em;
+    background-color: white;
+    border-radius: 2em;
+    padding-bottom: 0.6em;
+    padding-top: 0.6em;
+}
+
+#forecastInnerBox h2{
+    font-weight: lighter;
+    font-size: large;
+}
+
+#sideHeader{
+    color : white;
+    margin-bottom : -0.5em;
+}
+
+
+#headingElement{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 480px){
+    #inputHolder {
+        margin-left: 1em;
+        width: 80%;
+        font-size: 2.5vh;
+    }
+    
+    #locator {
+        margin-left: 5vh;
+        width: 20vw;
+    }
+
+    #locator h2 {
+        display: none;
+    }
+
+    #showArea{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #currentCity{
+        width: 100vw;
+        background-color: #6CB4EE;
+        height: auto;
+        padding-bottom: 2em;
+        padding-right: 2em;
+        border: 0.5em solid white;
+        border-radius: 2em;
+    }
+
+    #outerBox{
+        background-color: white;
+        width: 90vw;
+        height: 20vh;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 3em; 
+        align-items: center;
+        border: 0.2em black solid;
+        border-radius: 4em;
+    }
+
+    #headerBox img{
+        height: 10vw;
+        width: 10vw;
+    }
+
+    #headerBox h1{
+        font-size: 1.2em;
+    }
+    
+    #headerBox h2{
+        font-size: 0.8em;
+    }
+
+    #innerBox{
+        margin-right: 1.8em;
+        font-size: 1em;
+    }
+
+    #sideHeader{
+        color : white;
+        margin-bottom: 0em;
+    }
+
+    #commonCities{
+        height: 100vh;
+        padding-left: 2em;
+        padding-top: 1em;
+        padding-right: 2em;
+        padding-top: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #0066b2;
+        border: 0.5em white solid;
+        border-radius: 2em;
+    }
+
+    #locator img {
+        width: 2em;
+        height: 2em;
+        margin-top: -0.5em;
+        margin-left: 1em;
+    }
+
+    #currentCity{
+        width: 100vw;
+        background-color: #6CB4EE;
+        border: 0.5em solid white;
+        border-radius: 2em;
+    }
+
+    #outerForecastBox{
+        width : 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left : -1em;
+        margin-top : 1em;
+    }
+
+    #forecastInnerBox{
+        width : 100%;
+        border : 0.2em black solid;
+        font-size: 0.7em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1em;
+        background-color: white;
+        border-radius: 2em;
+        padding-bottom: 0.6em;
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+    #forecastOuterBox{
+        width: 100%;
+        height: auto;
+        padding-top: 2em;
+    }
+
+    #currentWeatherInnerBox{
+        width : 90vw;
+        height: 60vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+        border: 0.2em solid black;
+        border-radius: 4em;
+        margin-left: -1.4em;
+    }
+
+    #leftInnerBox{
+        width : 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+}
